@@ -34,5 +34,12 @@ public class Actor {
         movieCount = MovieCount+1;
     }
 
+    public void joinAsStar( Movie m ) {
+        m.MainStar = this;
+    }
+
+    public void joinAsSupporting( Movie m ) {
+        m.SupportingRole = this;
+    }
 }
 
