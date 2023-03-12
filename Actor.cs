@@ -3,14 +3,11 @@ using System;
 public class Actor {
 
     private int movieCount;
-    private String gender;
+    private string gender;
 
-    public int MovieCount{ 
-        get {
-            return movieCount;
-        }
-    }
+    public int MovieCount{ get; }
     public string Name { get; set; }
+
     public string Gender { 
         get {
             return gender;
@@ -26,9 +23,15 @@ public class Actor {
     
     public Actor( string aName, string aGender, int aMovieCount ) {
         Name = aName;
-        gender = aGender;
+        bool isIt = (Name == aName) // true/false
+        Gender = aGender; 
         movieCount = aMovieCount;
     }
+    // public Actor( string Name, string gender, int movieCount ) {
+    //     this.Name = Name;
+    //     this.gender = gender;
+    //     this.movieCount = movieCount;
+    // }
 
     public void AddMovie() {
         movieCount = MovieCount+1;

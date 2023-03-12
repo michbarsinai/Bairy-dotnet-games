@@ -10,4 +10,13 @@ joe.Gender = "F";
 joe.AddMovie();
 Console.WriteLine(joe.MovieCount);
 
-joe.Gender = "X";
+Movie mv = new Movie( "Blues Brothers");
+Actor jb = new Actor( "John Belushi", "M", 0);
+Actor de = new Actor( "Dan Aykroyd", "M", 0);
+
+jb.joinAsStar(mv);
+de.joinAsSupporting(mv);
+
+Console.WriteLine("Star: " + mv.MainStar.Name);
+
+// joe.Gender = "11";
