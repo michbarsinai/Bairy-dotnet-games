@@ -23,7 +23,6 @@ public class Actor {
     
     public Actor( string aName, string aGender, int aMovieCount ) {
         Name = aName;
-        bool isIt = (Name == aName) // true/false
         Gender = aGender; 
         movieCount = aMovieCount;
     }
